@@ -1,5 +1,4 @@
 let secretNumber = Math.trunc(Math.random() * 20) + 1;
-console.log(secretNumber);
 let score = 20;
 let highScore = 0;
 
@@ -61,6 +60,7 @@ btnCheck.addEventListener('click', function () {
 btnAgain.addEventListener('click', function () {
   score = 20;
   displayMessage('Start guessing...');
+  displayNumber('?');
   displayScore(20);
   changeBodyColor('#222');
   document.querySelector('.guess').value = '';
